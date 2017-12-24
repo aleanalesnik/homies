@@ -1,0 +1,208 @@
+/*
+font-family: 'Handstand';
+font-family: 'Chapaza';
+font-family: 'Messages';
+font-family: 'Buba DEMO Outline';
+font-family: 'Bebas Kai';
+*/
+
+
+/* BASIC STYLING */
+
+* {
+	margin: 20px;
+	font-family: 'Bebas Kai';
+	font-size: 20px;
+	font-weight: lighter;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+	font-size: 150px;
+	font-family: 'Handstand';
+	font-weight: lighter;
+	text-shadow: 1px 1px #000000;
+    text-align: center;
+    letter-spacing: 3px;
+    display: inline;
+    /*text-decoration: overline;*/
+
+    /*background-color: #e8e230;
+    padding: 5px;
+    display: inline;
+    border: 1px solid #000000;*/
+}
+
+
+h2 {
+	font-size: 45px;
+	font-family: 'Chapaza';
+}
+
+h3 {
+	font-size: 30px;
+	font-weight: lighter;
+    font-family: 'Bebas Kai';
+
+}
+
+h4 {
+    font-size: 40px;
+    font-family: 'Chapaza'; 
+}
+
+p {
+    font-size: 24px;
+    font-family: 'Bebas Kai';;
+}
+
+
+a {
+    color: black;
+	font-size: 20px;
+}
+
+
+
+
+
+
+/* HOME PAGE */
+
+.indexlinks {
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#link1:hover {
+    background-color: #e8e230;
+
+}
+
+#link2:hover {
+    background-color: #e8e230;
+}
+
+
+
+
+
+
+/* form */
+
+input {
+    border: 1px solid #000000;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#form {
+    text-align: center;
+}
+
+#formbutton {
+    font-family: 'Bebas Kai';
+    font-size: 15px;
+    background-color: #4CAF50;
+    padding: 16px;
+    color: white;
+    border: none;
+}
+
+
+
+
+
+/* USERS PAGE */
+
+
+li {
+    list-style-type: none;
+    font-family: 'Bebas Kai';
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+
+.users:hover {
+    background-color: #e8e230;
+    cursor: pointer;
+}
+
+.homies2 {
+	color: black;
+	font-variant: small-caps;
+}
+
+
+
+
+
+
+
+
+
+/* NAV BAR DROPDOWN */
+
+
+/* dropdown button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-family: 'Bebas Kai';
+}
+
+/* dropdown content position */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* dropdown content 
+(hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 0;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+}
+
+/* dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* hover links - color change */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* hover menu - show dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* dropdown content shows - color change */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

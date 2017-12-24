@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	h1 Homies
+	h2 Members:
+	each user in users
+		.users
+			li.homies(alt=user.name) #{user.name}
+			li.homies2(id=user.name) email: #{user.email}
+				a(href=`/users/${user.id}`) link
+	script(src='https://code.jquery.com/jquery-3.2.1.js')
+	script.
+		$(document).ready(() => {
+			
+			$('.homies2').hide(); 
+
+			$('.homies').on('click', function() {
+				var click = $(this).attr("alt");
+				$(`#${click}`).toggle();
+
+			})
+		});
+
+//- dynamic parameter
+//- show all users
+//- http://localhost:3000/users
+//- name: Alea, email: alea.nalesnik@gmail.com,link (click on link)
+//- http://localhost:3000/users/1

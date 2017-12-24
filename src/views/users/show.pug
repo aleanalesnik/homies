@@ -1,0 +1,20 @@
+extends layout
+
+block content
+	h3 Thanks for joining, #{user.name}.
+	img(src='/images/homies.gif', alt='FistBump')
+	br
+	p Now, go check out the rest of our squad.
+	a(href='/users') the homies
+
+
+//- syntax to render a value of a variable in pug
+//- will become a hyperlink element
+//- #{user.name} becomes #{user.id}
+
+
+//- ul
+//- 	li name: #{user.name}
+//- 	li email: #{user.email}
+//- br
+//- img(src='/images/homies.gif', alt='FistBump')

@@ -1,0 +1,27 @@
+extends layout
+
+block content
+	h1 Sign Up!
+	form(action='/users' method='post' id='form')
+		| Name
+		input(name='name')
+		br
+		| Email
+		input(name='email')
+		br
+		| Password
+		input(type='password' name='password')
+		br
+		input(type='submit' value='create user' id='formbutton')
+
+//- points to this post request in app.js!!
+//- create the new user
+//- app.post('/users', bodyParser.urlencoded({extended: true}), function (request, response) {
+//- 	User.create({
+//- 		name: request.body.name,
+//- 		email: request.body.email,
+//- 		password: request.body.password
+//- 	}).then(function (user) {
+//- 		response.redirect('/users/' + user.id);
+//- 	});
+//- });
